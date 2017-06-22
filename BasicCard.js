@@ -14,4 +14,9 @@ module.exports = BasicCard;
 function BasicCard(front, back){
     this.front = front;
     this.back = back;
+
+    this.print = function(){
+        console.log("FrontText: ",this.front);
+        console.log("BackText", this.back);
+    }
 }

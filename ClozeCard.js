@@ -22,6 +22,12 @@ function ClozeCard(fullText, cloze){
         this.partialText = this.fullText.replace(cloze, "...");
     }
 
+    this.print = function(){
+        console.log("FullText: ",this.fullText);
+        console.log("Cloze: ", this.cloze);
+        console.log("PartialText", this.partialText);
+    }
+
     this.init();
     return this;
 }

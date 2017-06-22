@@ -1,9 +1,12 @@
-var test = require("./BasicCard.js");
+var BasicCard = require("./BasicCard.js");
 var ClozeCard = require("./ClozeCard.js");
 
 
-var clozecard =  new ClozeCard("Microsoft sucks dude!","Microsoft");
-console.log("Full text",clozecard.fullText);
-console.log("Partial text", clozecard.partialText);
-console.log("Cloze");
+
+var basic1 = new BasicCard("What is the meaning of life", "42");
+var cloze1 =  new ClozeCard("George Washington was the first president.","George Washington");
+
+basic1.print();
+cloze1.print();
+
 
